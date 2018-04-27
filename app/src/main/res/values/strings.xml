@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Ayo Pinjam</string>
+
+    <string name="update_app_model_error">Download gagal</string>
+    <string name="update_app_model_prepare">Persiapan Download</string>
+    <string name="update_app_model_progress">Sedang Download %1$d%2$s</string>
+    <string name="update_app_model_success">Download Berhasil</string>
+
+    '
+    <string name="enter">Segera mulai</string>
+    //立即体验
+    <string name="tiaoguo"><![CDATA[Lewati >]]></string>
+    //跳过
+
+    <string name="login">Masuk</string>
+    //登录
+    <string name="enter_phone">Mohon Masukkan No. HP</string>
+    //输入手机号
+    <string name="enter_code">Mohon Masukkan Kode Verifikasi</string>
+    //输入验证吗
+    <string name="enter_ok_coe">Mohon Masukkan Kode Verifikasi Yang Benar</string>
+    //输入正确的验证吗
+
+
+    <string name="phone">No. HP</string>
+    //手机好
+    <string name="define_angin">Mohon Konfirmasi Lagi</string>
+    //请再确认一次
+    <string name="net_info">Saat ini tidak ada internet dan perolehan data mungkin gagal</string>
+    //网络错误
+
+    <string name="home">Beranda</string>
+    //首页
+    <string name="error_net">Jaringan eror, coba lagi nanti</string>//网络异常,请稍后重试
+
+    <string name="header_reset">Tarik ke bawah untuk memperbarui</string>
+    <string name="header_pull">Tarik ke bawah untuk memperbarui</string>
+    <string name="header_pull_over">Lepaskan untuk segera memperbarui</string>
+    <string name="header_refreshing">Sedang memperbarui...</string>
+    <string name="header_completed">Memperbarui Berhasil</string>
+
+    <string name="getcode">Mendapatkan kode verifikasi</string>    //获取验证码
+
+    <string name="loan">Pinjaman</string>    //贷款
+
+
+    <string name="segera_pinjam">Segera Pinjam</string> //立即申请
+
+    <string name="syarat_pengajuan">Syarat Pengajuan</string>//申请条件
+    <string name="enter_ok_phone">Mohon Masukkan No. HP Yang Benar</string> // 正确的手机号
+    <string name="google">Ponsel anda belum terdapat Google Play</string> //没有安装google play
+
+    <string name="login_error_info">Gagal masuk, mohon masuk lagi</string>//token 失效
+
+</resources>

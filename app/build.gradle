@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.ayo.pinjam"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "versionCode"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //多渠道打包支持
+    productFlavors {
+
+        xiaomi {//投放vivo市场
+            //     manifestPlaceholders = [UMENG_CHANNEL_VALUE: Vivo]
+        }
+        huawei {//投放oppo市场
+            //     manifestPlaceholders = [UMENG_CHANNEL_VALUE: Oppo]
+        }
+        google{
+
+        }
+
+    }
+    //注意我注释掉的，可以去掉注释，那样的话，下面这句就可以不用了
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //fragmentation
+    compile 'me.yokeyword:fragmentation:1.2.2'
+    compile 'me.yokeyword:fragmentation:1.2.2'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //design
+    implementation 'com.android.support:design:27.0.2'
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    //rxjava2
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    //rxjava adapter
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //gson  converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //rxAndroid
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //cardview
+    implementation 'com.android.support:cardview-v7:27.0.2'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    //recyclerView adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //下拉刷新
+    compile 'com.github.anzaizai:EasyRefreshLayout:1.3.1'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.1.1'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+    //banner
+    implementation 'cn.bingoogolapple:bga-banner:2.1.6@aar'
+    //umeng
+    compile 'com.umeng.sdk:common:1.4.1'
+    compile 'com.umeng.sdk:analytics:7.4.1'
+    //flycotablayout
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.2@aar'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:1.5.0@aar'
+    //加载动画
+    compile 'com.wang.avi:library:2.1.3'
+
+    implementation files('libs/ShareSDK-Facebook-3.1.2.jar')
+    compile 'com.google.android.gms:play-services-ads:12.0.1'
+
+}

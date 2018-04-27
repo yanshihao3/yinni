@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#0f97ff</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="line_background">#E4E4E4</color>
+    <color name="key_ok_color">#0f97ff</color>
+    
+    <color name="gray">#cccccc</color>
+
+    <color name="text_color_32">#323232</color>
+
+    <color name="bg_color_f9">#f9f9f9</color>
+    <color name="bg_color_f7">#f7f7f7</color>
+    <color name="bg_color_ff">#ffffff</color>
+    <color name="bg_color_da">#dadada</color>
+    <color name="bg_color_d7">#d7d7d7</color>
+    <color name="bg_color_99">#d2d2d2</color>
+    <color name="bg_color_e8">#e8e8e8</color>
+    <color name="bg_color_btn">#D50000</color>
+    <color name="bg_color_ce">#cecece</color>
+    <color name="bg_color_blue">#669cfe</color>
+    <color name="text_color_00">#000000</color>
+    <color name="text_color_huang">#f9c600</color>
+    <color name="text_color_64">#646464</color>
+    <color name="text_color_79">#797979</color>
+    <color name="text_color_0058f9">#0058f9</color>
+    <color name="text_color_00dff9">#00dff9</color>
+    <color name="text_color_b3">#b3b3b3</color>
+    <color name="text_color_red">#ff3333</color>
+    <color name="text_color_66">#666666</color>
+    <color name="text_color_ef">#efefef</color>
+    <color name="text_background">#73ac7f</color>
+    <color name="main_title_select_on">#89c999</color>
+    <color name="main_title_select_off">#333333</color>
+</resources>

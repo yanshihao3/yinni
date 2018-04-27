@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_item_selector"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/bg_color_ff"
+    app:cardElevation="0px"
+    app:cardMaxElevation="2px"
+    app:cardUseCompatPadding="false"
+    app:contentPaddingBottom="-20dp"
+    app:contentPaddingTop="-20dp"
+    card_view:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/product_item_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_10"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_toRightOf="@id/product_item_iv"
+            android:id="@+id/product_item_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="名称"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_toRightOf="@id/product_item_iv"
+            android:layout_below="@id/product_item_tv1"
+            android:id="@+id/product_item_tv2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="简介"
+            android:textColor="@color/text_color_79"
+            android:textSize="@dimen/size_12" />
+        <TextView
+            android:layout_toRightOf="@id/product_item_iv"
+            android:layout_below="@id/product_item_tv2"
+            android:id="@+id/product_item_tv3"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="Lulus"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color_79"
+            android:textSize="@dimen/size_12" />
+
+        <TextView
+            android:layout_alignBaseline="@id/product_item_tv3"
+            android:layout_toRightOf="@id/product_item_tv3"
+            android:layout_below="@id/product_item_tv2"
+            android:id="@+id/product_item_tv4"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="89%"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/size_15" />
+        <TextView
+            android:layout_alignBaseline="@id/product_item_tv3"
+            android:layout_toRightOf="@id/product_item_tv4"
+            android:layout_below="@id/product_item_tv2"
+            android:id="@+id/product_item_tv5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="Bunga Harian"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color_79"
+            android:textSize="@dimen/size_12" />
+
+        <TextView
+            android:id="@+id/product_item_tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/product_item_tv3"
+            android:layout_below="@id/product_item_tv2"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/product_item_tv5"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="89%"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/size_15" />
+
+    <ImageView
+        android:id="@+id/product_item_iv2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/main_product_item_iv" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/length_10"
+        android:background="@color/bg_color_d7" />
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>

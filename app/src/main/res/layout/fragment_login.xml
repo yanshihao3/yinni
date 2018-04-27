@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/login_phone" />
+
+        <EditText
+            android:hint="@string/enter_phone"
+            android:id="@+id/login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_phone"
+            android:background="@null"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_background" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/login_code" />
+
+        <EditText
+            android:hint="@string/enter_code"
+            android:id="@+id/login_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv"
+            android:background="@null"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/login_iv"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_background" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_code"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/login_code" />
+
+        <EditText
+            android:hint="@string/enter_code"
+            android:id="@+id/login_phone_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv1"
+            android:background="@null"
+            android:textSize="12sp" />
+
+        <Button
+            android:text="@string/getcode"
+            android:id="@+id/getCode"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_background" />
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/login"
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp" />
+</LinearLayout>
+
